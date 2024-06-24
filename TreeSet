@@ -1,0 +1,41 @@
+package maggie;
+
+import java.util.TreeSet;
+
+public class Demo_TreeSort {
+
+	public static void main(String[] args) {
+		// initializing the Tree set
+		TreeSet<String> ts = new TreeSet<String>();// need not to mention the generic type because it is homogenious
+
+		ts.add("India");
+		ts.add("USA");
+		ts.add("Pakisthan");
+		ts.add("canada");
+		ts.add("uk");
+		// printing the values
+		System.out.println(ts);
+		// printing the size
+		System.out.println("size:" + ts.size());
+		// checking the country is found or not
+		if (ts.contains("USA")) {
+			System.out.println("contains");
+		} else {
+			System.out.println("not found");
+		}
+		for (String s : ts) {
+			System.out.println(s);
+		}
+		System.out.println(ts);
+		// checking whether it is empty or not
+		System.out.println(!ts.isEmpty());
+		// Removing the country
+		System.out.println("size:" + ts.remove("3"));
+		// printing the frist country
+		System.out.println("size:" + ts.pollFirst());
+		// printing the last country
+		System.out.println("size:" + ts.pollLast());
+		System.out.println(ts);
+	}
+
+}
