@@ -1,0 +1,33 @@
+package com.collection;
+
+import java.util.Stack;
+
+public class Lab_Stack {
+
+	public static void main(String[] args) {
+   //initializing the Stack
+		Stack<String> stack = new Stack<String>();
+		stack.push("Hyderabad");
+		stack.push("Medchal");
+		stack.push("Warangal");
+		stack.push("Adilabad");
+		stack.push("Karimnagar");
+		stack.push("Khammam");
+
+		stack.push("Nizambad");
+		stack.push("Mahabubnagar");
+		stack.push("Vikrabad");
+		stack.push("Medak");
+
+		// Printing all stack elements:"
+		System.out.println(stack);
+		// printing highest literacy cities
+		System.out.println(stack.peek());
+		// Searching the element in stack at position
+		System.out.println(stack.search("RangaReddy"));
+		stack.pop();
+		System.out.println(stack);
+
+	}
+
+}
