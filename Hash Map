@@ -1,0 +1,32 @@
+package maggie;
+
+import java.util.HashMap;
+
+public class Demo_HashMap {
+
+	public static void main(String[] args) {
+		//initializing the hashmap
+		HashMap<Integer, String> cc = new HashMap();
+
+		cc.put(91, "India");
+		cc.put(86, "China");
+		cc.put(1, "America");
+		cc.put(1, "Canada");
+		cc.put(92, "Pakisthan");
+       //printing the countries and their code
+		System.out.println(cc);
+		//printing only key values
+		System.out.println(cc.keySet());
+		// printing the country names
+		System.out.println(cc.values());
+		//removing the country
+		System.out.println(cc.remove(3));
+		System.out.println(cc);
+		//replacing the country
+		cc.replace(90, "Turkey");
+		System.out.println(cc);
+		cc.putIfAbsent(380,"Ukraine");
+		System.out.println(cc);
+	}
+
+}
